@@ -1,6 +1,6 @@
 import React from 'react'
 
-function MyMessge({message}) {
+function MyMessage({message}) {
   if(message.attachments && message.attachments.length > 0){
     return (
       <img
@@ -18,4 +18,4 @@ function MyMessge({message}) {
   )
 }
 
-export default MyMessge
+export default MyMessage
