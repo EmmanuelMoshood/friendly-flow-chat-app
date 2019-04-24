@@ -1,11 +1,10 @@
-import React from 'react'
-import { useState } from 'react'
-import { SendOutlined, PictureOutlined } from '@ant-design/icons'
-import {sendMessage, isTyping} from "react-chat-engine"
+import { useState } from 'react';
+import { SendOutlined, PictureOutlined } from '@ant-design/icons';
+import { sendMessage, isTyping } from 'react-chat-engine';
 
-function MessageForm(props) {
+const MessageForm = (props) => {
   const [value, setValue] = useState('');
-  const { chatId, creds} = props; 
+  const { chatId, creds } = props;
 
   const handleChange = (event) => {
     setValue(event.target.value);
@@ -29,9 +28,8 @@ function MessageForm(props) {
     sendMessage(creds, chatId, { files: event.target.files, text: '' });
   };
 
-  
   return (
-    <form className='message-form' onSubmit={handleSubmit}>
+    <form className="message-form" onSubmit={handleSubmit}>
       <input
         className="message-input"
         placeholder="Send a message..."
@@ -39,7 +37,7 @@ function MessageForm(props) {
         onChange={handleChange}
         onSubmit={handleSubmit}
       />
-       <label htmlFor="upload-button">
+      <label htmlFor="upload-button">
         <span className="image-button">
           <PictureOutlined className="picture-icon" />
         </span>
@@ -55,7 +53,7 @@ function MessageForm(props) {
         <SendOutlined className="send-icon" />
       </button>
     </form>
-  )
-}
+  );
+};
 
-export default MessageForm
+export default MessageForm;
