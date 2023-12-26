@@ -1,7 +1,7 @@
 # Friendly Flow Chat Application
 
 ![Friendly Flow](https://i.ibb.co/GJwyy9m/Bv9-Js3-QLOLY-HD.jpg)
-![friendly-flow](https://github.com/EmmanuelMoshood/friendly-flow-chat-app/assets/100259567/4fa2f6ad-43e0-4cd2-9422-874203985b2c)
+![friendly-flow (1)](https://github.com/EmmanuelMoshood/friendly-flow-chat-app/assets/100259567/57b36b7c-0a54-488e-9811-29df6d366cf5)
 
 
 This is full-fledged Realtime Chat Application using React, Firebase and ChatEngine.
